@@ -20,6 +20,9 @@
 
 	<!-- nouislider -->
 	<link type="text/css" rel="stylesheet" href="frontend/css/nouislider.min.css" />
+	<!-- dark mode  -->
+	<script src="frontend/js/jsbaru.js"></script>
+	<link rel="stylesheet" href="frontend/css/darkmode.css">
 
 	<!-- Font Awesome Icon -->
 	<link rel="stylesheet" href="frontend/css/font-awesome.min.css">
@@ -227,7 +230,8 @@ if($file == "checkout.php"){
 							?>
 							<li class="header-account dropdown default-dropdown">
 								<a href="masuk.php" class="text-uppercase main-btn">Login</a> 
-								<a href="daftar.php" class="text-uppercase primary-btn">Daftar</a> 
+								<a href="daftar.php" class="text-uppercase primary-btn">Daftar</a>  
+								<button onclick="myFunction()" class="text-uppercase primary-btn2">Switch Mode</button>
 							</li>
 							<?php
 						}
@@ -238,6 +242,7 @@ if($file == "checkout.php"){
 							<button class="nav-toggle-btn main-btn icon-btn"><i class="fa fa-bars"></i></button>
 						</li>
 						<!-- / Mobile nav toggle -->
+
 					</ul>
 				</div>
 			</div>
@@ -275,7 +280,6 @@ if($file == "checkout.php"){
 					<ul class="menu-list">
 						<li><a href="index.php">Home</a></li>
 						<li><a href="index.php">Shop</a></li>
-						<li><a href="forums/index.php">Forums</a></li>
 						<li><a href="login.php">Login Admin</a></li>
 					</ul>
 				</div>
