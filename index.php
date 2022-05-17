@@ -1,6 +1,5 @@
 <?php include 'header.php'; ?>
 
-
 <!-- BREADCRUMB -->
 <div id="breadcrumb">
 	<div class="container">
@@ -13,7 +12,23 @@
 
 <!-- section -->
 <div class="section">
-	<!-- container -->
+		<div class="container">
+			<div class="sliders">
+				<div class="slider">
+					<img src="gambar/banner/gambar1.jpg" alt="bunga 1">
+				</div>
+				<div class="slider">
+					<img src="gambar/banner/gambar2.jpg" alt="bunga 2">
+				</div>
+				<div class="slider">
+					<img src="gambar/banner/gambar3.jpg" alt="bunga 3">
+				</div>
+				<div class="slider">
+					<img src="gambar/banner/gambar4.jpg" alt="bunga 4">
+				</div>
+			</div>
+		</div>
+
 	<div class="container">
 		<!-- row -->
 		<div class="row">

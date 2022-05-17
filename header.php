@@ -10,6 +10,8 @@
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+	<!-- slide banner -->
+	<link rel ="stylesheet" rel="stylesheet" href="frontend/css/slide.css">
 
 	<!-- Bootstrap -->
 	<link type="text/css" rel="stylesheet" href="frontend/css/bootstrap.min.css" />
