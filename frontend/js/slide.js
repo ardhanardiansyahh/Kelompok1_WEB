@@ -1,3 +1,4 @@
+//js bagian moniska 
 let start = 0;
 otomatis();
 
