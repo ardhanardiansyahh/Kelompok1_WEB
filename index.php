@@ -117,7 +117,6 @@
 					<!-- /row -->
 				</div>
 				<!-- /STORE -->
-
 				
 				<div class="store-filter clearfix">
 					<div class="pull-right">
