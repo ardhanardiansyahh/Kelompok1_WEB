@@ -28,14 +28,8 @@
 					<div class="row">
 
 						<div class="col-lg-12">
-							<?php 
-							if(isset($_GET['alert'])){
-								if($_GET['alert'] == "sukses"){
-									echo "<div class='alert alert-success'>Password anda berhasil diganti!</div>";
-								}
-							}
-							?>
 
+							<div class='info-data' data-infodata='<?php if(isset($_SESSION['info'])){ echo $_SESSION['info']; } unset($_SESSION['info']); ?>'></div>
 							<form action="customer_password_act.php" method="post">
 								<div class="form-group">
 									<label for="">Masukkan Password Baru</label>
@@ -43,7 +37,7 @@
 								</div>
 
 								<div class="form-group">
-									<input type="submit" class="primary-btn" value="Ganti Password">
+									<input type="submit" class="primary-btn" name='ganti' value="Ganti Password">
 								</div>
 							</form>
 						</div>
