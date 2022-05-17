@@ -1,4 +1,3 @@
-//js bagian moniska 
 let start = 0;
 otomatis();
 
@@ -20,5 +19,5 @@ function otomatis()
 	console.log("gambar ke" +start);
 	start++;
 
-	setTimeout(otomatis, 2000);
+	setTimeout(otomatis, 4000);
 }

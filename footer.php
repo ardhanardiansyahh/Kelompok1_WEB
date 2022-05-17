@@ -80,7 +80,7 @@
 <script src="frontend/js/nouislider.min.js"></script>
 <script src="frontend/js/jquery.zoom.min.js"></script>
 <script src="frontend/js/main.js"></script>
-<script src="frontend/js/moniska.js"></script>
+<script src="frontend/js/slide.js"></script>
 
 </body>
 
