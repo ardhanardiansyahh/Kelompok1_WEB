@@ -20,16 +20,9 @@
   <link rel="stylesheet" href="../assets/bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <link rel="stylesheet" href="../assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-  <style>
-    .swal-wide{
-    width:850px;
-}
-  </style>
-  <!-- <style>
-    .swal2-popup{
-      font-size: 1rem !important;
-    }
-  </style> -->
+  <link rel="stylesheet" href="frontend/css/sweetalert2.min.css">
+  <!-- <style> .swal2-popup{font-size: 2rem !important;}</style> -->
+
   
   <?php 
   include '../koneksi.php';
