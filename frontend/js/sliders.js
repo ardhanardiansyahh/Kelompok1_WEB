@@ -16,8 +16,8 @@ function otomatis()
 	}
 
 	sliders[start].style.display = "block";
-	console.log("gambar ke" +start);
+	console.log("banner ke" +start);
 	start++;
 
-	setTimeout(otomatis, 4000);
+	setTimeout(otomatis, 3000);
 }

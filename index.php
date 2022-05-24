@@ -15,16 +15,16 @@
 		<div class="container">
 			<div class="sliders">
 				<div class="slider">
-					<img src="gambar/banner/gambar1.jpg" alt="bunga 1">
+					<img src="gambar/banner/gambar1.jpg" >
 				</div>
 				<div class="slider">
-					<img src="gambar/banner/gambar2.jpg" alt="bunga 2">
+					<img src="gambar/banner/gambar2.jpg" >
 				</div>
 				<div class="slider">
-					<img src="gambar/banner/gambar3.jpg" alt="bunga 3">
+					<img src="gambar/banner/gambar3.jpg" >
 				</div>
 				<div class="slider">
-					<img src="gambar/banner/gambar4.jpg" alt="bunga 4">
+					<img src="gambar/banner/gambar4.jpg" >
 				</div>
 			</div>
 		</div>
