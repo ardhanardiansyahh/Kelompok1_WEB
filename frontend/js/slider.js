@@ -16,7 +16,7 @@ function otomatis()
 	}
 
 	sliders[start].style.display = "block";
-	console.log("banner ke" +start);
+
 	start++;
 
 	setTimeout(otomatis, 3000);

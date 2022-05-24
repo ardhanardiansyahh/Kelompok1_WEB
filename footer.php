@@ -80,7 +80,7 @@
 <script src="frontend/js/nouislider.min.js"></script>
 <script src="frontend/js/jquery.zoom.min.js"></script>
 <script src="frontend/js/main.js"></script>
-<script src="frontend/js/sliders.js"></script>
+<script src="frontend/js/slider.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.all.min.js"></script> -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
 <script src="frontend/js/sweetalert2.all.min.js"></script>
