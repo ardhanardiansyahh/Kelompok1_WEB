@@ -1,5 +1,6 @@
 <?php 
 include '../koneksi.php';
+session_start();
 $nama  = $_POST['nama'];
 $username = $_POST['username'];
 $password = md5($_POST['password']);
@@ -9,8 +10,14 @@ $allowed =  array('gif','png','jpg','jpeg');
 $filename = $_FILES['foto']['name'];
 
 if($filename == ""){
-	mysqli_query($koneksi, "insert into admin values (NULL,'$nama','$username','$password','')");
-	header("location:admin.php");
+	$tambah = mysqli_query($koneksi, "insert into admin values (NULL,'$nama','$username','$password','')");
+	if ($tambah) {
+		$_SESSION['info'] = 'sukses';
+		header("location:admin.php?alert=sukses");
+	}else{
+		// 
+	}
+	
 }else{
 	$ext = pathinfo($filename, PATHINFO_EXTENSION);
 
@@ -19,8 +26,13 @@ if($filename == ""){
 	}else{
 		move_uploaded_file($_FILES['foto']['tmp_name'], '../gambar/user/'.$rand.'_'.$filename);
 		$file_gambar = $rand.'_'.$filename;
-		mysqli_query($koneksi, "insert into admin values (NULL,'$nama','$username','$password','$file_gambar')");
-		header("location:admin.php");
+		$tambah = mysqli_query($koneksi, "insert into admin values (NULL,'$nama','$username','$password','$file_gambar')");
+		if ($tambah) {
+			$_SESSION['info'] = 'sukses';
+			header("location:admin.php?alert=sukses");
+		}else{
+			// 
+		}
 	}
 }
 

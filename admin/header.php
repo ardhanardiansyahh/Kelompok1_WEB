@@ -21,6 +21,11 @@
   <link rel="stylesheet" href="../assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
   <link rel="stylesheet" href="frontend/css/sweetalert2.min.css">
+  <link type="text/css" rel="stylesheet" href="frontend/css/style.css" />
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<link href="../frontend/toastr/build/toastr.min.css" rel="stylesheet" type="text/css"/>
+  <script src="../frontend/toastr/build/toastr.min.js"></script>
+  <script src="../frontend/toastr/build/jquery-3.6.0.min.js"></script>
   <!-- <style> .swal2-popup{font-size: 2rem !important;}</style> -->
 
   

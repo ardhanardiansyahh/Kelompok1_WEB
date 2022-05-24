@@ -52,6 +52,13 @@
 <script src="../assets/dist/js/demo.js"></script>
 <script src="../assets/bower_components/ckeditor/ckeditor.js"></script>
 
+<script src="frontend/js/sweetalert2.all.min.js"></script>
+<!-- <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.min.css'> -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="../frontend/toastr/build/toastr.min.js"></script>
+<script src="../frontend/toastr/build/jquery-3.6.0.min.js"></script>
+
+
 <script>
   $(document).ready(function(){
 
