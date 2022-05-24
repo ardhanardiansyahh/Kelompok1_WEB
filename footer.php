@@ -82,12 +82,54 @@
 <script src="frontend/js/main.js"></script>
 <script src="frontend/js/slide.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.all.min.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<!-- <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.min.css'> -->
-<script src="frontend/js/swal-gantipw.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
 <script src="frontend/js/sweetalert2.all.min.js"></script>
-
+<!-- <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.min.css'> -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </body>
+
+<script>
+	
+$('#change').on('click', function(e){
+    e.preventDefault();
+
+	var password = $('#passwordd').val();
+	if (password == '') {
+		Swal.fire({
+  			icon: 'error',
+  			title: 'Oops...',
+  			text: 'Something went wrong!'
+		})
+	}
+
+    Swal.fire({
+        title: 'Apakah Anda yakin?',
+        text: "password akan diganti",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ganti!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+		  $('#form-gantipw').submit();
+		} else {
+			Swal.fire(
+				'  ',
+				'yauda, gajadi diganti')
+		}
+	})
+});
+
+const notif = $('.info-data').data('infodata');
+if (notif == 'sukses') {
+	Swal.fire(
+		'Berhasil!',
+		'Password terganti',
+		'success'
+		)
+}
+</script>
 
 <script>
 
