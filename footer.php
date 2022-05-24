@@ -94,31 +94,32 @@ $('#change').on('click', function(e){
     e.preventDefault();
 
 	var password = $('#passwordd').val();
+	console.log(password);
 	if (password == '') {
 		Swal.fire({
   			icon: 'error',
-  			title: 'Oops...',
-  			text: 'Something went wrong!'
+  			title: 'Password Kosong!',
+  			text: 'Silahkan diisi password Anda!'
+		})
+	} else {
+		Swal.fire({
+			title: 'Apakah Anda yakin?',
+			text: "password akan diganti",
+			icon: 'warning',
+			showCancelButton: true,
+			confirmButtonColor: '#3085d6',
+			cancelButtonColor: '#d33',
+			confirmButtonText: 'Ganti!'
+		  }).then((result) => {
+			if (result.isConfirmed) {
+			  $('#form-gantipw').submit();
+			} else {
+				Swal.fire(
+					'  ',
+					'yauda, gajadi diganti')
+			}
 		})
 	}
-
-    Swal.fire({
-        title: 'Apakah Anda yakin?',
-        text: "password akan diganti",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Ganti!'
-      }).then((result) => {
-        if (result.isConfirmed) {
-		  $('#form-gantipw').submit();
-		} else {
-			Swal.fire(
-				'  ',
-				'yauda, gajadi diganti')
-		}
-	})
 });
 
 const notif = $('.info-data').data('infodata');
