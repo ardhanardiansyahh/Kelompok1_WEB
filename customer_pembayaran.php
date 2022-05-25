@@ -84,7 +84,7 @@
 								</tr>
 								<tr>
 									<th>Atas Nama</th>
-									<td>TimeZone Online | GameShop.id</td>
+									<td>PayPlay | GameShop.id</td>
 								</tr>
 								<tr>
 									<th>Bank</th>

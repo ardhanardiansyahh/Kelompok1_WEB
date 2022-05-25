@@ -17,7 +17,7 @@
 					</div>
 					<!-- /footer logo -->
 
-					<p>TimeZone Online penyedia items, voucher games / semua perlengkapan game mu</p>
+					<p>PayPlay penyedia items, voucher games / semua perlengkapan game mu</p>
 
 				</div>
 			</div>

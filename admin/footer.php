@@ -1,7 +1,7 @@
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      Toko Online Penjualan TimeZone Online | GameShop.id
+      Toko Online Penjualan PayPlay | GameShop.id
     </div>
     <strong>Copyright &copy; <?php echo date('Y') ?></strong>
   </footer>
