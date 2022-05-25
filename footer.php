@@ -99,8 +99,17 @@ $('#change').on('click', function(e){
     e.preventDefault();
 
 	var password = $('#passwordd').val();
-	console.log(password);
-	if (password == '') {
+	var password_konfirm = $('#passwordd_konfirm').val();
+
+	// console.log(password);
+
+	if (password != password_konfirm) {
+		Swal.fire({
+  			icon: 'error',
+  			title: 'Password Salah!',
+  			text: 'Silahkan diisi password Anda yang benar!'
+		})
+	} else if (password == '' || password_konfirm =='') {
 		Swal.fire({
   			icon: 'error',
   			title: 'Password Kosong!',
@@ -125,6 +134,32 @@ $('#change').on('click', function(e){
 			}
 		})
 	}
+
+	// if (password == '') {
+	// 	Swal.fire({
+  	// 		icon: 'error',
+  	// 		title: 'Password Kosong!',
+  	// 		text: 'Silahkan diisi password Anda!'
+	// 	})
+	// } else {
+	// 	Swal.fire({
+	// 		title: 'Apakah Anda yakin?',
+	// 		text: "password akan diganti",
+	// 		icon: 'warning',
+	// 		showCancelButton: true,
+	// 		confirmButtonColor: '#F8694A',
+	// 		cancelButtonColor: '#30323A',
+	// 		confirmButtonText: 'Ganti!'
+	// 	  }).then((result) => {
+	// 		if (result.isConfirmed) {
+	// 		  $('#form-gantipw').submit();
+	// 		} else {
+	// 			Swal.fire(
+	// 				'  ',
+	// 				'yauda, gajadi diganti')
+	// 		}
+	// 	})
+	// }
 });
 
 const notif = $('.info-data').data('infodata');

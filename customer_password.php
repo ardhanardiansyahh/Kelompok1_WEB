@@ -33,6 +33,8 @@
 								<div class="form-group">
 									<label for="">Masukkan Password Baru</label>
 									<input type="password" class="input" required="required" id="passwordd" name="password" placeholder="Masukkan password .." min="5">
+									<label for="">Masukkan Konfirmasi Password Baru</label>
+									<input type="password" class="input" required="required" id="passwordd_konfirm" name="password" placeholder="Masukkan password .." min="5">
 								</div>
 
 								<div class="form-group">
