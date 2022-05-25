@@ -227,6 +227,7 @@ if($file == "checkout.php"){
 									<li><a href="customer_pesanan.php"><i class="fa fa-list"></i> Pesanan Saya</a></li>
 									<li><a href="customer_password.php"><i class="fa fa-lock"></i> Ganti Password</a></li>
 									<li><a href="customer_logout.php"><i class="fa fa-sign-out"></i> Keluar</a></li>
+									<button onclick="myFunction()" class="text-uppercase primary-btn2">Switch Mode</button>
 								</ul>
 							</li>
 							<!-- /Account -->
