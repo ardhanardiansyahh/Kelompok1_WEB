@@ -86,6 +86,11 @@
 <script src="frontend/js/sweetalert2.all.min.js"></script>
 <!-- <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.min.css'> -->
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="frontend/toastr/build/toastr.min.js"></script>
+<script src="frontend/toastr/build/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/toastr@2.1.4/toastr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js" integrity="sha512-lbwH47l/tPXJYG9AcFNoJaTMhGvYWhVM9YI43CT+uteTRRaiLCui8snIgyAN8XWgNjNhCqlAUdzZptso6OCoFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>t>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 
 <script>
@@ -107,8 +112,8 @@ $('#change').on('click', function(e){
 			text: "password akan diganti",
 			icon: 'warning',
 			showCancelButton: true,
-			confirmButtonColor: '#3085d6',
-			cancelButtonColor: '#d33',
+			confirmButtonColor: '#F8694A',
+			cancelButtonColor: '#30323A',
 			confirmButtonText: 'Ganti!'
 		  }).then((result) => {
 			if (result.isConfirmed) {
