@@ -107,7 +107,7 @@ $('#change').on('click', function(e){
 		Swal.fire({
   			icon: 'error',
   			title: 'Password Salah!',
-  			text: 'Silahkan diisi password Anda yang benar!'
+  			text: 'Silahkan diisi kedua password Anda yang benar!'
 		})
 	} else if (password == '' || password_konfirm =='') {
 		Swal.fire({
@@ -172,5 +172,70 @@ if (notif == 'sukses') {
 }
 </script>
 
+
+<script>
+$('#regist').on('click', function(f){
+    f.preventDefault();
+	
+	var nama = $('#nama').val();
+	var email = $('#email').val();
+	var hp = $('#hp').val();
+	var alamat = $('#alamat').val();
+	var password = $('#password').val();
+	// console.log(password);
+
+	if (nama == '') {
+		Swal.fire({
+  			icon: 'error',
+  			title: 'Nama kosong!',
+  			text: 'Silahkan diisi nama Anda!'
+		})
+	} else if( email =='' ) {
+		Swal.fire({
+  			icon: 'error',
+  			title: 'Email kosong!',
+  			text: 'Silahkan diisi email Anda!'
+		})
+	}else if( hp =='' ) {
+		Swal.fire({
+  			icon: 'error',
+  			title: 'No. HP kosong!',
+  			text: 'Silahkan diisi No. HP Anda!'
+		})
+	}else if( alamat =='' ) {
+		Swal.fire({
+  			icon: 'error',
+  			title: 'Alamat kosong!',
+  			text: 'Silahkan diisi alamat Anda!'
+		})
+	}else if( password =='' ) {
+		Swal.fire({
+  			icon: 'error',
+  			title: 'Password kosong!',
+  			text: 'Silahkan diisi password Anda!'
+		}) 
+	}else {
+		Swal.fire({
+			title: 'Apakah Anda yakin?',
+			text: "pastikan data yang Anda isi telah benar",
+			icon: 'warning',
+			showCancelButton: true,
+			confirmButtonColor: '#F8694A',
+			cancelButtonColor: '#30323A',
+			confirmButtonText: 'Ganti!'
+		  }).then((result) => {
+			if (result.isConfirmed) {
+			  $('#form-regist').submit();
+			} else {
+				Swal.fire(
+					'  ',
+					'yauda, gajadi didaftarin')
+			}
+		})
+	}
+
+	
+});
+</script>
 
 </html>

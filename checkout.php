@@ -88,9 +88,39 @@
 											</select>
 										</div>
 
+										<?php 
+
+
+										$curll = curl_init();
+																					
+										curl_setopt_array($curll, array(
+											CURLOPT_URL => "http://api.rajaongkir.com/starter/city",
+											CURLOPT_RETURNTRANSFER => true,
+											CURLOPT_ENCODING => "",
+											CURLOPT_MAXREDIRS => 10,
+											CURLOPT_TIMEOUT => 30,
+											CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+											CURLOPT_CUSTOMREQUEST => "GET",
+											CURLOPT_HTTPHEADER => array(
+												"key: 8f22875183c8c65879ef1ed0615d3371"
+											),
+										));
+										
+										$response = curl_exec($curll);
+										$err = curl_error($curll);
+										$data_kabupaten = json_decode($response, true);
+										?>
+
 										<div class="form-group">
 											<label>Kabupaten</label>
-											<select id="kabupaten" name="kabupaten" class="input"></select>
+											<select id="kabupaten" name="kabupaten" class="input">
+												<option>Pilih Kabupaten</option>
+												<?php 
+												for ($i=0; $i < count($data_kabupaten['rajaongkir']['results']); $i++) {
+													echo "<option value='".$data_kabupaten['rajaongkir']['results'][$i]['city_id']."'>".$data_kabupaten['rajaongkir']['results'][$i]['city_name']."</option>";
+												}
+												?>
+											</select>
 										</div>
 
 										

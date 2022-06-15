@@ -37,35 +37,35 @@
 					<div class="row">
 						<div class="col-lg-6 col-lg-offset-3">
 							
-							<form action="daftar_act.php" method="post">
+							<form id='form-regist' action="daftar_act.php" method="post">
 								<div class="form-group">
 									<label for="">Nama Lengkap</label>
-									<input type="text" class="input" required="required" name="nama" placeholder="Masukkan nama lengkap ..">
+									<input id='nama' type="text" class="input" required="required" name="nama" placeholder="Masukkan nama lengkap ..">
 								</div>
 
 								<div class="form-group">
 									<label for="">Email</label>
-									<input type="email" class="input" required="required" name="email" placeholder="Masukkan email ..">
+									<input id='email' type="email" class="input" required="required" name="email" placeholder="Masukkan email ..">
 								</div>
 
 								<div class="form-group">
 									<label for="">Nomor HP / Whatsapp</label>
-									<input type="number" class="input" required="required" name="hp" placeholder="Masukkan nomor HP/Whatsapp ..">
+									<input id='hp' type="number" class="input" required="required" name="hp" placeholder="Masukkan nomor HP/Whatsapp ..">
 								</div>
 
 								<div class="form-group">
 									<label for="">Alamat Lengkap</label>
-									<input type="text" class="input" required="required" name="alamat" placeholder="Masukkan alamat lengkap ..">
+									<input id='alamat' type="text" class="input" required="required" name="alamat" placeholder="Masukkan alamat lengkap ..">
 								</div>
 
 								<div class="form-group">
 									<label for="">Password</label>
-									<input type="password" class="input" required="required" name="password" placeholder="Masukkan password ..">
+									<input id='password' type="password" class="input" required="required" name="password" placeholder="Masukkan password ..">
 									<small class="text-muted">Password ini digunakan untuk login ke akun anda.</small>
 								</div>
 
 								<div class="form-group">
-									<input type="submit" class="primary-btn btn-block" value="Daftar">
+									<input id='regist' type="submit" class="primary-btn btn-block" value="Daftar">
 								</div>
 							</form>
 

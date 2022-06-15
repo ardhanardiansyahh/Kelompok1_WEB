@@ -19,7 +19,7 @@ $berat = $_POST['berat'];
 
 $ongkir = $_POST['ongkir2'];
 
-$total_bayar = $_POST['total_bayar']+$ongkir;
+$total_bayar = $_POST['total_bayar'].$ongkir;
 
 mysqli_query($koneksi,"insert into invoice values(NULL,'$tanggal','$id_customer','$nama','$hp','$alamat','$provinsi','$kabupaten','$kurir','$berat','$ongkir','$total_bayar','0','','')")or die(mysqli_error($koneksi));
 
