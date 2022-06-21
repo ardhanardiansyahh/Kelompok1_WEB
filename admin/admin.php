@@ -17,7 +17,7 @@
     <div class="row">
       <section class="col-lg-10 col-lg-offset-1">
         <div class="box box-info">
-        <div class='info-data' data-infodata='<?php if(isset($_SESSION['info'])){ echo $_SESSION['info']; } unset($_SESSION['info']); ?>'></div>
+
           <div class="box-header">
             <h3 class="box-title">Admin</h3>
             <a href="admin_tambah.php" class="btn btn-info btn-sm pull-right"><i class="fa fa-plus"></i> &nbsp Tambah Admin Baru</a>              
@@ -75,13 +75,4 @@
   </section>
 
 </div>
-<script>
-  const notif = $('.info-data').data('infodata');
-  if (notif == 'sukses') {
-    // Display an info toast with no title
-    toastr.success('Data berhasil ditambah!')
-  }else{
-    toastr.error('Data gagal ditambah!')
-  }
-</script>
 <?php include 'footer.php'; ?>

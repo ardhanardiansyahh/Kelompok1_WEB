@@ -173,7 +173,7 @@ if (notif == 'sukses') {
 </script>
 
 
-<script>
+<!-- <script>
 $('#regist').on('click', function(f){
     f.preventDefault();
 	
@@ -236,6 +236,6 @@ $('#regist').on('click', function(f){
 
 	
 });
-</script>
+</script> -->
 
 </html>

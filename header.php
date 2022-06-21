@@ -6,12 +6,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>PayPlay</title>
+	<title>TimeZone Online</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
-	<!-- slide banner -->
-	<link rel ="stylesheet" rel="stylesheet" href="frontend/css/slide.css">
 
 	<!-- Bootstrap -->
 	<link type="text/css" rel="stylesheet" href="frontend/css/bootstrap.min.css" />
@@ -22,18 +20,12 @@
 
 	<!-- nouislider -->
 	<link type="text/css" rel="stylesheet" href="frontend/css/nouislider.min.css" />
-	<!-- dark mode  -->
-	<script src="frontend/js/jsbaru.js"></script>
-	<link rel="stylesheet" href="frontend/css/darkmode.css">
 
 	<!-- Font Awesome Icon -->
 	<link rel="stylesheet" href="frontend/css/font-awesome.min.css">
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="frontend/css/style.css" />
-	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-	<link href="frontend/toastr/build/toastr.min.css" rel="stylesheet" type="text/css"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" integrity="sha512-6S2HWzVFxruDlZxI3sXOZZ4/eJ8AcxkQH1+JjSe/ONCEqR9L4Ysq5JdT5ipqtzU7WHalNwzwBv+iE51gNHJNqQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <?php
@@ -227,7 +219,6 @@ if($file == "checkout.php"){
 									<li><a href="customer_pesanan.php"><i class="fa fa-list"></i> Pesanan Saya</a></li>
 									<li><a href="customer_password.php"><i class="fa fa-lock"></i> Ganti Password</a></li>
 									<li><a href="customer_logout.php"><i class="fa fa-sign-out"></i> Keluar</a></li>
-									<button onclick="myFunction()" class="text-uppercase primary-btn2">Switch Mode</button>
 								</ul>
 							</li>
 							<!-- /Account -->
@@ -236,8 +227,7 @@ if($file == "checkout.php"){
 							?>
 							<li class="header-account dropdown default-dropdown">
 								<a href="masuk.php" class="text-uppercase main-btn">Login</a> 
-								<a href="daftar.php" class="text-uppercase primary-btn">Daftar</a>  
-								<button onclick="myFunction()" class="text-uppercase primary-btn2">Switch Mode</button>
+								<a href="daftar.php" class="text-uppercase primary-btn">Daftar</a> 
 							</li>
 							<?php
 						}
@@ -248,7 +238,6 @@ if($file == "checkout.php"){
 							<button class="nav-toggle-btn main-btn icon-btn"><i class="fa fa-bars"></i></button>
 						</li>
 						<!-- / Mobile nav toggle -->
-
 					</ul>
 				</div>
 			</div>
@@ -286,6 +275,7 @@ if($file == "checkout.php"){
 					<ul class="menu-list">
 						<li><a href="index.php">Home</a></li>
 						<li><a href="index.php">Shop</a></li>
+						<li><a href="forums/index.php">Forums</a></li>
 						<li><a href="login.php">Login Admin</a></li>
 					</ul>
 				</div>

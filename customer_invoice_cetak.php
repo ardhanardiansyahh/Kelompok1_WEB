@@ -38,7 +38,7 @@
 			<div>
 
 				<center>
-					<h3>PayPlay | GameShop.id</h3>
+					<h3>TimeZone Online | GameShop.id</h3>
 				</center>
 
 				<h4>INVOICE-00<?php echo $i['invoice_id'] ?></h4>

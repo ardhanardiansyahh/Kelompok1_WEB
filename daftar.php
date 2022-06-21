@@ -65,7 +65,7 @@
 								</div>
 
 								<div class="form-group">
-									<input id='regist' type="submit" class="primary-btn btn-block" value="Daftar">
+									<input id='regist' name="submitreg" type="submit" class="primary-btn btn-block" value="Daftar">
 								</div>
 							</form>
 

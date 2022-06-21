@@ -27,7 +27,7 @@
 
     
   <center>
-    <h2>Laporan Penjualan PayPlay | GameShop.id</h2>
+    <h2>Laporan Penjualan TimeZone Online | GameShop.id</h2>
   </center>
 
   <?php 

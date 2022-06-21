@@ -44,13 +44,13 @@
 										</div>
 
 										<div class="form-group">
-											<label>Nomor HP</label>
-											<input type="number" class="input" name="hp" placeholder="Masukkan no.hp aktif .." required="required">
+											<label>Alamat Email</label>
+											<input type="text" class="input" name="email" placeholder="Masukkan email pemesan .." required="required">
 										</div>
 
 										<div class="form-group">
-											<label>Alamat Lengkap</label>
-											<textarea name="alamat" class="form-control" style="resize: none;" rows="6" placeholder="Masukkan alamat lengkap .."></textarea>
+											<label>Nomor HP</label>
+											<input type="number" class="input" name="hp" placeholder="Masukkan no.hp aktif .." required="required">
 										</div>
 
 										<?php 
@@ -213,16 +213,7 @@
 
 											</tbody>
 											<tfoot>
-												<tr>
-													<th class="empty" colspan="2"></th>
-													<th>TOTAL BERAT</th>
-													<th class="text-center"><?php echo $total_berat; ?> Gram</th>
-												</tr>
-												<tr>
-													<th class="empty" colspan="2"></th>
-													<th>ONGKIR</th>
-													<th class="text-center"><span id="tampil_ongkir"><?php echo "Rp. 0 ,-"; ?></span></th>
-												</tr>
+											
 												<tr>
 													<th class="empty" colspan="2"></th>
 													<th>TOTAL BAYAR</th>
